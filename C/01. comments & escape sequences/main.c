@@ -2,6 +2,7 @@
 
 int main(){
     
-    printf("hello world");
+    // To jest komentarz jednolinijkowy
+    
     return 0;
 }
