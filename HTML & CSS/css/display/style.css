@@ -1,0 +1,21 @@
+div{
+    background-color: hsl(0, 100%, 50%);
+    width: 100px;
+    height: 100px;
+    display: block
+}
+span{
+    background-color: hsl(192, 86%, 53%);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/*
+    display: - Mówi czy/jak powinnien być wyświetlany element.
+    
+    display: block - wyświetla element jako block (div)
+    display: inline - wyświetla element jako w linii (span)
+    display: inline-block - -,,- block w linii (span-div)
+    display: none: niewyświetla elementu
+*/

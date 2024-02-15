@@ -1,0 +1,37 @@
+/*
+    combinators - wyjaśnia relacje między wylistowanymi wybornikami:
+                     - odmieniec
+                    > - dziecko
+                    ~ - ogólny bliźniak
+                    + = sąsiedni bliźniak
+    np. div > p ustawiamy CSS dla wszystkich paragrafów w konkretnym kontenerze
+*/
+#container{
+    border: 2px solid;
+}
+/*
+#container p{
+    // działa dla wszystkich <p> w tym kontenerze
+    background-color: yellow;
+}
+*/
+/*
+#container > p{
+    // działa tylko dla dzieci tego kontenera
+    // inne <p> w wewnętrzych kontenerach nie otrzymają tych wartości
+    background-color: yellow;
+}
+*/
+/*
+#container ~ p{
+    // działa tylko dla bliźniaków znajdujących się poza kontenerem
+    // UWAGA!!! Jeżeli <p> znajdzie się w innym kontenerze to będzie bliźniakiem do <div>
+    background-color: yellow;
+}
+*/
+/*
+#container + p{
+    // wybiera pierwszego bliźniaka po tym kontenerze
+    background-color: yellow;
+}
+*/

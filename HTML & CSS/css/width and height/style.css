@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box; /*Ustawia jak mają się zachowywać szerokość i długość*/
+}
+
+.container{
+    background-color: grey;
+    height: 100vh; /*vh = viewport height - wysokośc okna edycji/podglądowego*/
+}
+.box{
+    background-color: white;
+    border: 2px solid;
+    padding: 25px; /* wyściela wnętrze elementu */
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center; /*wyrównuje tekst*/
+
+    min-height: 50%;
+}
+
+/*
+    width: - zmienia szerokość elementu
+    height: - zmienia długość elementu
+    
+    min-width: - ustawia minimalną szerokość
+    min-height: - -,,- długość
+
+    max-width: - ustawia maksymalną szerokość
+    max-height: - -,,- długośc
+*/

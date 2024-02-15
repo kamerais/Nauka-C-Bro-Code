@@ -1,0 +1,40 @@
+/*
+    Pseudo-elementy - nadają styl konkretnemu elementowi
+    Formuła selector::pseudo-element
+
+    np. h1::first-letter{
+
+    }
+*/
+/*
+h1::first-letter{
+    ::first-letter - ustawia co się ma dziać z pierwszą literą
+    font-size: 2em;
+    font-style: italic;
+}
+p::first-line{
+    ::first-line - ustawia co się ma dziać z pierwszą linią
+    background-color: yellow;
+}
+p::selection{
+    ::selection - -,,- gdy podkreślimy sobie tekst
+    color: white;
+    background-color: aquamarine;
+}
+#fruits li::marker{
+    li::marker - -,,- ze znacznikiem przy elementach z listy
+    content: "❤️";
+    color: green;
+    font-size: 1.2em;
+}
+#apple::after{
+    ::after - co ma się znaleźć po elemencie
+    content: "🍎";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
+}
+*/

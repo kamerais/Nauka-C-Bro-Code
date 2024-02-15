@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url(fonts/NotoSansJP-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Rubik Doodle Shadow";
+    src: url(fonts/RubikDoodleShadow-Regular.ttf);
+}
+
+h1{
+    font-family: "Noto Sans JP",verdana, arial;
+}
+p{
+    font-family: "Rubik Doodle Shadow","lucida console", "courier new";
+    font-size: 1em; /* 1em to 100% */
+    font-weight: bold;
+    font-style: italic;
+}

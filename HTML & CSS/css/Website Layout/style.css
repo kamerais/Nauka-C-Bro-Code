@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    /*oblicza szerokości i dzieli przez padding*/
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: hsla(0, 4%, 52%, 0.856);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar {
+    background-color: hsla(0, 0%, 0%, 0.842);
+    height: 50px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer {
+    background-color: hsla(0, 4%, 52%, 0.856);
+    clear: both;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) {
+
+    /*Jeżeli nasz ekran ma maksymalnie 600 px to zrób coś*/
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}

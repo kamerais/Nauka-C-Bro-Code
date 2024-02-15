@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button website</title>
+    </head>
+    <body>
+        <!--<a href="page2.html">-->
+        <!--<button> - tworzy przycisk.-->
+        <!--onlick - metoda, która pozwala na zrobienie czegoś po naciśnięciu przycisku-->
+        <button onclick="doSomething()" style="font-size: 25px; background-color:gray; color:lightblue; border-radius: 25px;">click me</button>
+        <!--</a>-->
+        <!--id - nadaje id dla jakiegoś przedmiotu-->
+        <p id="greeting">Hello</p>
+        <!--Funckja stworzona w języku JavaScript-->
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML = "GoodBye";
+            }
+        </script>
+    </body>
+</html>

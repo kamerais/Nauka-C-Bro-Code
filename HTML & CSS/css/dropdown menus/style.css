@@ -1,0 +1,36 @@
+/*
+
+*/
+.dropdown{
+    display: inline-block; /*Zabezpieczenie, aby dropdown pokazywał się po najechaniu na element*/
+}
+
+.dropdown button{
+    background-color: rgb(255, 78, 78);
+    color:aquamarine;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /* Zamienia kursor na wskaźnik*/
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.808);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(224, 103, 22);
+}
+.dropdown a:hover{
+    background-color: hsla(0, 9%, 78%, 0.658);
+}

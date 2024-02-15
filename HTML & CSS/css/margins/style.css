@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+}
+.box{
+    border: 5px solid;
+    font-size: 3em;
+    width: 150px;
+    height: 150px;
+    /*  margin - przestrzeń dookoła elementu
+        auto pozwala na automatyczne centrowanie elementów
+    */
+    margin: auto;
+}
+#box1{
+    background-color: hsl(0,100%,60%);
+    
+}
+#box2{
+    background-color: hsl(189, 100%, 55%);
+}

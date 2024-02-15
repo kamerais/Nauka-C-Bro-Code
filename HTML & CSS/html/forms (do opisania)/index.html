@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Froms website</title>
+    </head>
+    
+    <body>
+        <!--<form> - tworzy forme-->
+        <!--action - wysyła dane do jakiegoś pliku akcji-->
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+        <!--method="POST" - przechowuje wrażliwe dane np. hasło i data urodzenie lub pesel-->
+        <!--method="GET" - przechowuje niewrażliwe dane np. nazwa użytkownika-->
+            <label for="username">username:</label>
+            <input id="username" type="text" placeholder="spongebob" minlength="6" maxlength="15" required>
+            <br>
+
+            <label for="password">password:</label>
+            <input id="password" type="password" placeholder="pokemons" minlength="6" maxlength="15" required>
+            <br>
+            
+            <label for="email">email:</label>
+            <input id="email" type="email" placeholder="spongebob@gmail.com" required>
+            <br>
+
+            <label for="phone">phone:</label>
+            <input id="phone" type="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+
+            <label for="bday">birthday:</label>
+            <input id="bday" type="date" required>
+            <br>
+
+            <label for="quantity">quantity:</label>
+            <input id="quantity" type="number" min="0" max="99" value="1" required>
+            <br>
+
+            <label for="title">title:</label>
+            
+            <input id="Mr." name="title" type="radio" value="Mr.">
+            <label for="Mr.">Mr.:</label>
+
+            <input id="Ms." name="title" type="radio" value="Ms.">
+            <label for="Ms.">Ms.:</label>
+            
+            <input id="PhD." name="title" type="radio" value="PhD.">
+            <label for="PhD.">PhD:</label>
+            <br>
+
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+            <!--<select> - tworzy drop-down liste, dzięki której można wybrać jakąś opcję-->
+            <!--name="name" - artrybut ten pozwala na przesyłanie danych po potwierdzeniu opcji. ->
+                <option value="visa">visa</option>
+                <!--<option> - dodaje opcje do drop-down listy-->
+                <!--value="value" nadaje wartość opcji w liście-->
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+            <br>
+
+            <label for="subscribe">subscribe</label>
+            <input id="subscribe" type="checkbox">
+            <br>
+
+            <label for="comment">subscribe</label>
+            <textarea id="comment" rows="1" cols="25"></textarea>
+            <br>
+
+            <label for="file">file</label>
+            <input id="file" type="file" accept="image/png, image/jpeg">
+            <br>
+
+            <input type="reset">
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

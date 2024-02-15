@@ -1,0 +1,14 @@
+div{
+    border: 2px solid;
+    height: 75px;
+    overflow: show;
+}
+/*
+    overflow: - Jeżeli element się nie mieści to ustawia w jaki sposób ma się on zachować.
+    overflow: visible - jest to defualtowa wartość metody i pokazuje kiedy element wystaje poza rodzicielski element.
+    overflow: hidden - nie pokazuje części elementu, która wystaje poza obszar parent element boxa
+    overflow: clip (pracuje z metodą overflow-clip-margin: [wartość]) - podobna do hidden, ale działa z metodą w () i pokazuje ile ma wyświetlić części elementu,
+                                                                        która się nie mieści
+    overflow: scroll - tworzy suwak, aby móc zobaczyć nie mieszczącą się część elementu
+    overflow: auto - zmienia się dynamicznie, jeżeli wymagany jest suwak.
+*/

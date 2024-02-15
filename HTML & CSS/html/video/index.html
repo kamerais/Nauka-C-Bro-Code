@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Język będzie po angielsku-->
+    <head>
+        <!--Encoduje znaki na format UTF-8-->
+        <meta charset="UTF-8">
+        <!--Wymysza na IE, żeby użył najnowszej wersji silnika-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Pozwala na scalowanie strony dla urządzeń mobilnych-->
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Video website</title>
+    </head>
+    
+    <body>
+        <a target="_blank" href="https://pl.wikipedia.org/wiki/Minutnik">
+            <!--Aby stworzyć wideo używamy <video src="plik/path-to-plik>"-->
+            <!--kiedy zmieniamy width to height się do niego scaluje i wicewersa-->
+            <video width="500" controls autoplay muted loop>
+                <source src="wideo/5 SECOND TIMER ⏲️.mp4" type="video/mp4">
+                <source src="wideo/5 SECOND TIMER ⏲️.webm" type="video/webm">
+            </video>
+            <!--Możemy dodać wideo w jednej linijce, natomiast jeżeli spodziewamy się, że dany format może
+                nie zadziałać na czyjej przeglądarce to do środka dajemy <source src="plik/path-to-plik> i type="video/typ"\
+                w celu gdy jeden format nie zadziała to użyje drugiego-->
+        </a>
+    </body>
+
+</html>

@@ -1,0 +1,49 @@
+/*
+    Pseudo-klasy - pozwalają na wywołanie czegoś w trakcie wykonywania jakiejś czynności
+    Formuła selector:pseudo-class
+*/
+/*
+a:link{
+    color:aquamarine;
+    // ustawia kolor akwamaryna dla linku
+}
+a:hover{
+    color: red;
+    font-size: 1.1em;
+    // -,,- czerwony i długość czcionki na 1.1em dla linku, gdy się na niego najedzie
+}
+a:active{
+    color:black;
+    font-size: 1.1em;
+    // -,,- czarny -,,- w trakcie bycia naciśniętym
+}
+a:visited{
+    color:burlywood;
+    // -,,- burlywood dla pokazania, że link został naciśnięty
+}
+*/
+/*
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: rgb(223, 223, 223);
+}
+li:nth-child(1-n|odd|even|an+k){
+    li:nth-child(parametr) - ustawia własności tylko dla poszeczególnych wartości
+    1-n - liczby od 1 do n
+    odd - wszystkie nieparzyste
+    even - wszystkie parzyste
+    an+k - gdzie a to wartość dla wszystkich n elementów i k to wartość startowa
+    // Jeżeli dla a = 4 dodam k = 1, to znaczę od 1 i będę iść co 4-rty element
+    background-color: yellow;
+}
+*/
+#greeting p{
+    background-color: cyan;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}

@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /*column-gap: ustawia odległość między kolumnami*/
+    /*row-gap: 1em; -,,- rzędami*/
+    /*align-items: Jest na linii y-greków*/
+    /*flex-direction: defualtowo row*/
+    /*justify-content: Jest na lini x-ów*/
+    /*flex-wrap: (nowrap) roluje elementy, jeżeli brakuje miejsca*/
+    /*align-content: idzie w parze z flex-wrap*/
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: red;
+    /*align-self: ustawia pojedyńczy element*/
+    /*order: ustawia element na daną pozycję*/
+}
+#box2{
+    background-color: yellow;
+    
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: cyan;
+}

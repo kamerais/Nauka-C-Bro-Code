@@ -1,0 +1,31 @@
+/*
+    Jeżeli po prostu wpisujemy tagi to zmieniamy wszystkie tagi na takie jakie są określone w składni.
+    Jeżeli użyjemy #id to kierujemy zmiany pod dany tag z określonym id.
+    Jeżeli użyjemy .class to kierujemy zmiany pod daną grupę tagów z określoną nazwą klasy
+*/
+body{
+    background-color: black;
+}
+h1{
+    color:white;
+}
+
+.odd{
+    color: red;
+}
+.even{
+    color: pink;
+}
+/*
+#p1{
+    color: red;
+}
+#p2{
+    color: orange;
+}
+#p3{
+    color: yellow;
+}
+#p4{
+    color: green;
+}*/

@@ -1,0 +1,46 @@
+/*
+    transform: translateX(value); // rusza elementem w lewo lub w prawo (osobno)
+    transform: translateY(value); // rusza elementem w górę lub w dół (osobno)
+    transform. translate(x,y); // rusza dla dowolnych x,y (razem)
+    
+
+    transform: rotateX(k); // obraca elementem o k stopni na x
+    transform: rotateY(k); // obraca elementem o k stopni na y
+    transform: rotateZ(k); // obraca elementem o k stopni na z
+    
+    transform: scale(x,y); // scaluje o wartość na x i na y (powiększa/zmniejsza)
+    transform: scaleX(value); // scaluje o wartość na x (powiększa/zmniejsza)
+    transform: scaleY(value); // scaluje o wartość na y (powiększa/zmniejsza)
+
+    transform: skew(k); // przekrzywia element o k stopni na x i na y
+    transform: skewX(k); // przekrzywia element o k stopni na x
+    transform: skewY(k); // przekrzywia element o k stopni na u
+
+    Transformacji można używać ten na obrazkach
+*/
+body {
+    margin: 0px;
+}
+
+.box {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+
+    transform: translateX(10%) rotateZ(45deg) scale(0.5);
+}
+
+#box1 {
+    background-color: rgb(19, 214, 19);
+}
+
+#box2 {
+    background-color: rgb(255, 0, 0);
+}
+
+#box3 {
+    background-color: rgb(15, 235, 243);
+}

@@ -1,0 +1,62 @@
+
+/*
+    position: określa pozycje w jakiej ma się znajdować element
+    Wyróżniamy:
+        - relative - pozycja jest relatywna do miejsca, gdzie się znajduje;
+        - fixed - pozycja jest relatywna do okna podglądu;
+        - absolute - -,,- najbliższego przodka (jakiś kontener, w którym się znajduje)
+        - sticky - pozycja w zależności od pozycji kursora
+        - static - defualtowa pozycja dla elementu
+*/
+/*
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    position: relative;
+    top: 100px;
+    right: -100px;
+    //W pozycji relative, można ustawiać wartości top, left
+    
+}
+*/
+/*
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    // W pozycji fixed, można ustawić, w którym rogu ma się znajdować element
+    W tym przypadku prawy dolny róg
+}
+*/
+/*
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    position: relative;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    // W pozycji absolute element box2 znajdujący się w box1 jest na stałe do niego przypisany w ustawionej pozycji
+    top: 50px;
+    left: 50px;
+}
+*/
+/*
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    position: sticky;
+    // Pozycja sticky jest podobna do fixed, ale rezerwuje miejsce dla elementu i podąża,
+    jeżeli korzysta się ze scrolla
+    top: 0px;
+}
+*/

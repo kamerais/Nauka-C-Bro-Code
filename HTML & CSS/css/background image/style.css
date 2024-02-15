@@ -1,0 +1,19 @@
+/*
+body{
+    background-image: url("4kBackground.jpg");
+    // pozwala na wgranie obrazka
+    
+    background-repeat: no-repeat;
+    // Jeżeli obrazek jest za mały, blokuje go przed rekurencyjnym powtarzaniem samego siebie
+    
+    background-position: center;
+    // ustawia pozycję obrazka na środek
+
+    background-attachment: fixed;
+    // attachment - ustawia zachowywanie się obrazka np. podczas scrollowania
+    // fixed pozwala obrazkowi być w cały czas w takiej samej pozycji w trakcie scrollowania
+
+    background-size: cover;
+    // ustawia długość obrazka na wypełnienie
+}
+*/
