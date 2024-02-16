@@ -15,6 +15,11 @@ int main(){
     short int h = 32767l;        // 2 bit (-32,768 do +32,767) %d
     unsigned short int i = 65535; // 2 bity (od 0 do +65,535) %d
 
-    //int j = 
+    int j = 2147483647; // 4 bity (od -2,147,483,648 do +-2,147,483,647) %d
+    unsigned int k = 4294967295L; // 4 bity (od 0 do +4,294,967,295) %u
+
+    long long int l = 9223372036854775807; // 8 bitów (od -9 kwintylion do +9 kwintylion) %lld
+    unsigned long long int m = 1844674407370955161; // 8 bitów (od 0 do +18 kwintylion) %llu
+
     return 0;
 }
