@@ -9,6 +9,25 @@
 
 // Przykłady błędów
 
-console.log(x); // output: Uncaught ReferenceError: x is not defined
+// console.log(x); output: Uncaught ReferenceError: x is not defined
 
-console.lag("Hello"); // output: Uncaught TypeError: console.lag is not a function
+// console.lag("Hello"); output: Uncaught TypeError: console.lag is not a function
+
+// Przykład zastosowania try i catch
+
+try{
+    console.log(x);
+}
+catch(error){
+    console.log(error);
+}
+
+try{
+    console.lag("Hello");
+    
+}
+catch(error){
+    if(TypeError){
+        throw new Error("Błąd w pisowani")
+    }
+}
