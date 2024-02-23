@@ -1,4 +1,4 @@
-// --------------- Przykład 1 ---------------
+// --------------- Przykład 1 <h1> ---------------
 
 // Krok 1 stworzyć element
 // const newH1 = document.createElement("h1");
@@ -21,4 +21,32 @@
 // Usunąć element HTML
 // document.body.removeChild(newH1);
 
+
+// --------------- Przykład 2 <li> ---------------
+
+// Krok 1 stworzyć element
+// const newListItem = document.createElement("li");
+
+// Krok 2 Dodać atrybuty/własności
+
+// newListItem.textContent = "coconut";
+// newListItem.id = "coconut";
+// newListItem.style.fontWeight = "bold";
+
+// newListItem.style.backgroundColor = "lightgreen";
+// Krok 3 Dołączyć element do DOMa
+//document.body.append(newListItem);
+//document.body.prepend(newListItem);
+//document.getElementById("fruits").append(newListItem)
+//document.getElementById("fruits").prepend(newListItem);
+
+// const orange = document.getElementById("orange");
+// document.getElementById("fruits").insertBefore(newListItem, orange);
+
+// const listItems = document.querySelectorAll("#fruits li");
+// document.getElementById("fruits").insertBefore(newListItem, listItems[index]);
+// Usunąć element HTML
+
+// document.getElementById("coconut").removeChild(newListItem)
+// document.body.removeChild(newListItem);
 
