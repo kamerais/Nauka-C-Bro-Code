@@ -1,0 +1,10 @@
+db.{nazwa_kolekcji}.find({własność:{$ne:{wartość}}}) # $ne = not exist, porównuje obiekty w których nie istnieje dana własność z konkretną wartością
+
+db.{nazwa_kolekcji}.find({własność:{$lt:{wartość}}}) # $lt = less than, porównuje obiekty w których dana wartość jest mniejsza od konkretnej wartości
+db.{nazwa_kolekcji}.find({własność:{$lte:{wartość}}}) # $lte = less than equal, porównuje obiekty w których dana wartość jest mniejsza lub równa od konkretnej wartości
+
+db.{nazwa_kolekcji}.find({własność:{$gt:{wartość}}}) # $gt = greater than, porównuje obiekty w których dana wartość jest większa od konkretnej wartości
+db.{nazwa_kolekcji}.find({własność:{$gte:{wartość}}}) # $gte = greater than or equal, porównuje obiekty w których dana wartość jest większa lub równa od konkretnej wartości
+
+db.{nazwa_kolekcji}.find({własność:{$in:[x1,x2,x3,...,xn]}}) # $in = in, sprawdza czy konkretne wartości znajdują się w liście szukanych wartości
+db.{nazwa_kolekcji}.find({własność:{$nin:[x1,x2,x3,...,xn]}}) # $nin = not in, sprawdza czy konkretne wartości nie znajdują się w liście szukanych wartości
