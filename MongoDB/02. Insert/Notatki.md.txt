@@ -1,0 +1,3 @@
+db.{nazwa_kolekcji}.inserOne({własności_obiektu}) # dodaje do kolekcji objekt
+db.{nazwa_kolekcji}.find() # pokazuje co znajduje się w danej kolekcji
+db.{nazwa_kolekcji}.inserMany([{}, {}, ... , {}]) # dodaje do kolekcji listę obiektów
