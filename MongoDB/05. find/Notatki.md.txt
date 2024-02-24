@@ -1,0 +1,4 @@
+db.{nazwa_kolekcji}.find() # wyświetla jakie obiekty znajdują się w kolekcji
+db.{nazwa_kolekcji}.find({query}, {projection}) # {query} konkretne własności obiektu, projection co ma zostać wyświetlone
+np. db.students.find({name:"Spongebob"}) # wyświetla obiekt o nazwie Spongebob
+np. db.students.find({}, {_id: false, name: true, gpa: true}) # wyświetla imie i gpa, ale nie wyświetla _id
