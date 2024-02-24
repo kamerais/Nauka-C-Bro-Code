@@ -1,0 +1,4 @@
+db.{nazwa_kolekcji}.find().sort({po czym się chce sortować: 1 lub -1 (jeżeli odwrotnie)})
+db.{nazwa_kolekcji}.find().limit({liczba_objektów_do_pokazania})
+# można łączyć ze sobą sort i limit
+db.{nazwa_kolekcji}.find().sort({po czym się chce sortowaćL 1 lub -1 }).limit({liczba_objektów_do_pokazania})
