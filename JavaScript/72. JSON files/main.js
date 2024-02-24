@@ -25,7 +25,7 @@ const parseData = JSON.parse(jsonPeople);
 
 // Dodatkowo jak wydobyć dane z JSONa
 
-fetch("person.json")
-    .then(response => response.json()) // zwraca obietnice
+fetch("people.json")
+    .then(response => response.json())
     .then(values => values.forEach(value => console.log(value.isEmployed)))
     .catch(error => console.error(error));
