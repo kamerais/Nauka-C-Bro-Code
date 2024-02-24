@@ -1,0 +1,11 @@
+db.{nazwa_kolekcji}.find($and: [{}, {}, ..., {}]) # $and sprawdza czy wszystkie konkretne dane własności z wartościami znajdują się w danym obiekcie w kolekcji
+np. db.students.find($and: [{name: Spongebob}, {age:{$gte:18}}]) # sprawdza czy w kolekcji wstępuje obiekt o imieniu Spongebob i który ma więcej lub równo 18 lat
+
+db.{nazwa_kolekcji}.find($not: [{}, {}, ..., {}]) # $not sprawdza czy dane własności z wartościami nie znajdują się w kolekcji
+np. db.students.find($not: [{age:{$not:{$gte:18}}}]) # sprawdza czy w kolekcji wstępuje obiekt, który niema więcej lub równo 18 lat
+
+db.{nazwa_kolekcji}.find($nor: [{}, {}, ..., {}]) # $nor sprawdza czy dane własności z wartościami znajdują się w kolekcji
+np. db.students.find($nor: [{name: Spongebob}, {age:{$gte:18}}]) # sprawdza czy w kolekcji wstępuje obiekt nie o imieniu Spongebob lub który niema więcej lub równo 18 lat
+
+db.{nazwa_kolekcji}.find($or: [{}, {}, ..., {}]) # $or sprawdza czy dane własności z wartościami znajdują się w kolekcji
+np. db.students.find($or: [{name: Spongebob}, {age:{$gte:18}}]) # sprawdza czy w kolekcji wstępuje obiekt o imieniu Spongebob lub który ma więcej lub równo 18 lat
