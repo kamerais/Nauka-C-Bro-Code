@@ -1,0 +1,4 @@
+show dbs # pokazuje dostępne bazy danych
+use {nazwa_bazy_danych} # przełącza się do wybranej bazy danych
+db.createCollection("nazwa_kolekcji") # tworzy kolekcję w wybranej bazie danych
+db.dropDatabase() # usuwa bazę danych
