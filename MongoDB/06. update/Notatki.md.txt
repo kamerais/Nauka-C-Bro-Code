@@ -1,0 +1,10 @@
+db.{nazwa_kolekcji}.updateOne(filter, update) # dla wybranego obiektu dodaje własność
+np. db.students.updateOne({name: "Spongebob"}, {$set: {fullTime: true}}) # dla obiektu o imieniu Spongebob dodaje własność fullTime: true
+# można także usuwać własności obiektów
+np. db.students.updateOne({name: Spongebob}, {$unset: {fullTime: ""}}) # dla obiektu o imieniu Spongebob usuwa własność fullTime: true
+
+db.{nazwa_kolekcji}.updateMany({}, {własność:{wartość}}) # ustawia wartość dla wszystkich obiektów w kolekcji
+np. db.students.updateMany({}, {$set: {fullTime:false}}) # dla wszystkich obiektów ustawia wartość dla własności fullTime na false
+
+# można sprawdzać czy dana własność istnieje i ją zaktualizować
+np. db.students.updateMany({fullTime: {$exists:false}}, {$set: {fullTime: true}})
