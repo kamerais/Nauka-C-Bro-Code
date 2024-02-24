@@ -1,0 +1,2 @@
+db.{nazwa_kolekcji}.deleteOne({własność:wartość}) # usuwa jeden obiekt z kolekcji
+db.{nazwa_kolekcji}.deleteMany({własność:wartość}) # usuwa wiele obiektów o podanej własności i wartości
