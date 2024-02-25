@@ -1,0 +1,6 @@
+db.{nazwa_kolekcji}.createIndex({własność: 1 lub -1}) # tworzy index, który przechowuje dane własności w kolejności od najmniejszego do największego lub vice versa
+db.{nazwa_kolekcji}.getIndexes() # pokazuje dostępne indeksy
+db.{nazwa_kolekcji}.dropIndex("{nazwa_indexu}") # usuwa index
+
+# Aby zobaczyć przez ile dokumentów liniowo program musi przejść, aby znaleźć dane własności sorawdzamy przez .explain("executionStats")
+np. db.students.find({name:"Spongebob"}).explain("executionStats") # pokazuje przez ile dokumentów musiał przejść program
