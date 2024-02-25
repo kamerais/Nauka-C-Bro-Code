@@ -1,0 +1,7 @@
+show collections # pokazuje obecne kolekcje w bazie danych
+db.createCollection("{nazwa_kolekcji}", {capped:true/false, size: {ilość_bitów}, max: {max_ilość_dokumentów}}, {autoIndexId:true/false}) # tworzy kolekcje w bazie danych
+
+# capped - zaznacza czy kolekcja ma mieć jakieś ograniczenia
+# (Jeżeli tak) size - określa ilość_bitów ma przechowywać ta kolekcja
+# max: ile maksywalnie dokumentów ma przechowywać ta kolekcja
+# autoIndexId - czy obiekty mają być indexowane automatycznie czy nie
